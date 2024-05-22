@@ -176,7 +176,7 @@
     }
   }
 </style>
-
+<>
 <main class="main">
   <div class="content">
     <div class="left-side">
@@ -227,6 +227,10 @@
       </svg>
       <h1>Hello, {{ title }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
+      <button (click)="clickEvent()">click to open alert box</button>
+      
+      <app-home/>
+      
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
@@ -322,15 +326,18 @@
       </div>
     </div>
   </div>
+  <div>
+    <h1>components are created inside the app/components/about and project</h1>
+    <app-about></app-about>
+    <app-project></app-project>
+  </div>
+ 
 </main>
+<app-note></app-note>
 
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+
 
 
 <router-outlet />
